@@ -22,6 +22,7 @@ build2:
  stage: build
  script:
    - ls /matlab
+   - matlab -nosplash -nojvm -logfile "matlabVersionLog.cmaketmp" -nodesktop -nodisplay -r "version, exit"
  tags:
    - matlab
 
