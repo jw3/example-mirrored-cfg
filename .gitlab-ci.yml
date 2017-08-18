@@ -20,7 +20,7 @@ build1:
 
 build2:
  stage: build
- image: ubuntu:16.04
+ image: pdal/dependencies
  script:
    - ls /matlab
    - matlab -nosplash -nojvm -logfile "matlabVersionLog.cmaketmp" -nodesktop -nodisplay -r "version, exit"
